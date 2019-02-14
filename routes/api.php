@@ -13,4 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('complaints', ['as' => 'api.complaints.store', 'uses' => 'ComplaintController@store']);
+Route::get('/complaints', ['as' => 'api.complaints.index', 'uses' => 'ComplaintController@index']);
+Route::post('/complaints', ['as' => 'api.complaints.store', 'uses' => 'ComplaintController@store']);
