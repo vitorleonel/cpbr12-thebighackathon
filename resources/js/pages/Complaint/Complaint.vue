@@ -141,6 +141,8 @@ export default {
       try {
         await axios.post("/api/complaints", this.form);
 
+        alert('Denúncia cadastrada com sucesso!')
+
         this.resetForm();
       } catch ({ response }) {}
 

@@ -1987,24 +1987,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 return axios.post("/api/complaints", this.form);
 
               case 4:
+                alert('Denúncia cadastrada com sucesso!');
                 this.resetForm();
-                _context3.next = 10;
+                _context3.next = 11;
                 break;
 
-              case 7:
-                _context3.prev = 7;
+              case 8:
+                _context3.prev = 8;
                 _context3.t0 = _context3["catch"](1);
                 response = _context3.t0.response;
 
-              case 10:
+              case 11:
                 this.loading = false;
 
-              case 11:
+              case 12:
               case "end":
                 return _context3.stop();
             }
           }
-        }, _callee3, this, [[1, 7]]);
+        }, _callee3, this, [[1, 8]]);
       }));
 
       function submitHandler() {
